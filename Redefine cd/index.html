@@ -23,7 +23,7 @@ descZHistory  0.06s user 0.02s system 95% cpu 0.091 total</code></pre></div>
 <p>执行时间接近100ms。再看一下Node自己启动的时间：</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">-&gt;  time node -e &#39;&#39;
 node -e &#39;&#39;  0.06s user 0.02s system 95% cpu 0.080 total</code></pre></div>
-<p>Node自己启动的时间就达到80-90ms左右，在这个场景下时不可忍受的。</p>
+<p>Node自己启动的时间就达到80-90ms左右，在这个场景下是不可忍受的。</p>
 <p>所以换用Rust实现:</p>
 <div class="gatsby-highlight" data-language="rust"><pre class="language-rust"><code class="language-rust"><span class="token keyword">use</span> dirs<span class="token punctuation">;</span>
 <span class="token keyword">use</span> regex<span class="token punctuation">;</span>
