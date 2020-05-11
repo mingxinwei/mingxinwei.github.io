@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mingxin]]></title><description><![CDATA[A personal website of Mingxin]]></description><link>https://mingxin.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 May 2020 06:57:42 GMT</lastBuildDate><item><title><![CDATA[VXLAN & Flannel]]></title><description><![CDATA[VXLAN 是什么 Virtual Extensible LAN(VXLAN)是一个在三层网络上模拟二层网络的网络虚拟化技术。可以解决云计算场景下子网不够用的问题。 有一个和 VXLAN 名字和解决的问题都很相似的技术：VLAN，VXLAN 和 VLAN…]]></description><link>https://mingxin.io/VXLAN&amp;Flannel/</link><guid isPermaLink="false">https://mingxin.io/VXLAN&amp;Flannel/</guid><pubDate>Mon, 23 Dec 2019 11:51:30 GMT</pubDate><content:encoded>&lt;h3&gt;VXLAN 是什么&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mingxin]]></title><description><![CDATA[A personal website of Mingxin]]></description><link>https://mingxin.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 May 2020 11:25:10 GMT</lastBuildDate><item><title><![CDATA[VXLAN & Flannel]]></title><description><![CDATA[VXLAN 是什么 Virtual Extensible LAN(VXLAN)是一个在三层网络上模拟二层网络的网络虚拟化技术。可以解决云计算场景下子网不够用的问题。 有一个和 VXLAN 名字和解决的问题都很相似的技术：VLAN，VXLAN 和 VLAN…]]></description><link>https://mingxin.io/VXLAN&amp;Flannel/</link><guid isPermaLink="false">https://mingxin.io/VXLAN&amp;Flannel/</guid><pubDate>Mon, 23 Dec 2019 11:51:30 GMT</pubDate><content:encoded>&lt;h3&gt;VXLAN 是什么&lt;/h3&gt;
 &lt;p&gt;Virtual Extensible LAN(VXLAN)是一个在三层网络上模拟二层网络的网络虚拟化技术。可以解决云计算场景下子网不够用的问题。&lt;/p&gt;
 &lt;p&gt;有一个和 VXLAN 名字和解决的问题都很相似的技术：VLAN，VXLAN 和 VLAN 相比的优点是什么？&lt;/p&gt;
 &lt;p&gt;传统 VLAN 只能支持 4000 个子网，VXLAN 可以支持 1600 万个子网。&lt;/p&gt;
@@ -447,7 +447,7 @@ Chain DOCKER-&lt;span class=&quot;token environment constant&quot;&gt;USER&lt;/s
   &lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;还有一个可优化的点是性能，在使用js脚本时会感知到命令启动有一点卡顿。&lt;/p&gt;
-&lt;p&gt;使用js脚本当然很方便，不过他的启动时间相比小runtime的编译型语言来说还是差很多。而在&lt;code class=&quot;language-text&quot;&gt;cd&lt;/code&gt;这样的命令里，延时是比较重要的，我在使用js脚本时就能感知启动时有一点卡顿。&lt;/p&gt;
+&lt;p&gt;使用js脚本当然很方便，不过他的启动时间相比小runtime的编译型语言来说还是差很多。而在&lt;code class=&quot;language-text&quot;&gt;cd&lt;/code&gt;这样的命令里，延时是比较重要的。&lt;/p&gt;
 &lt;p&gt;测量一下：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;-&amp;gt;  time descZHistory
 descZHistory  0.06s user 0.02s system 95% cpu 0.091 total&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
