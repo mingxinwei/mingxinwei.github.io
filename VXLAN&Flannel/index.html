@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45 'Quattrocento Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Quattrocento Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif,'PingFang SC','Hiragino Sans GB','Droid Sans Fallback','Microsoft YaHei';font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0.90625rem;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1.1487rem;line-height:1.45rem;border-left:0.54375rem solid #1ca086;color:hsla(0,0%,0%,0.65);font-style:italic;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li > ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#1ca086;text-decoration:none;text-shadow:.03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;background-image:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px);}a:hover,a:active{text-shadow:none;background-image:none;}h1,h2,h3,h4,h5,h6{margin-top:2.175rem;margin-bottom:0.725rem;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.45rem;color:hsla(0,0%,0%,0.8);font-style:normal;font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){html{font-size:106.25%;line-height:24.65px;}blockquote{border-left:0.27187rem solid #1ca086;color:hsla(0,0%,0%,0.59);padding-left:0.81562rem;font-style:italic;margin-left:-1.0875rem;margin-right:0;}}</style><meta name="generator" content="Gatsby 5.16.1"/><meta name="theme-color" content="#ffffff"/><meta data-react-helmet="true" name="description" content="关于VXLAN、Flannel以及搭建一个简单的VXLAN网络。"/><meta data-react-helmet="true" property="og:title" content="VXLAN &amp; Flannel"/><meta data-react-helmet="true" property="og:description" content="关于VXLAN、Flannel以及搭建一个简单的VXLAN网络。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Mingxin"/><meta data-react-helmet="true" name="twitter:title" content="VXLAN &amp; Flannel"/><meta data-react-helmet="true" name="twitter:description" content="关于VXLAN、Flannel以及搭建一个简单的VXLAN网络。"/><style data-href="/styles.5557dbdc3684ad7b51f3.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:100;src:local("Work Sans Thin "),local("Work Sans-Thin"),url(/static/work-sans-latin-100-486631350d6aae4df14198dd8f1793f0.woff2) format("woff2"),url(/static/work-sans-latin-100-20e9e711f86ed80e99e5d8b8ed4a781c.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:200;src:local("Work Sans Extra Light "),local("Work Sans-Extra Light"),url(/static/work-sans-latin-200-7e5cd5aec6c119853293fb891680a1db.woff2) format("woff2"),url(/static/work-sans-latin-200-ab86e29e0620af85165a82152d598351.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:300;src:local("Work Sans Light "),local("Work Sans-Light"),url(/static/work-sans-latin-300-5a0649a56872700d9315cfe399de812e.woff2) format("woff2"),url(/static/work-sans-latin-300-011d289a8d88a2fdfd6cd2c631c6345c.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:400;src:local("Work Sans Regular "),local("Work Sans-Regular"),url(/static/work-sans-latin-400-41dba2ac8f3b89bba110ecbb7334575b.woff2) format("woff2"),url(/static/work-sans-latin-400-3254cfe8da4b4bdf57791236916365e0.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:500;src:local("Work Sans Medium "),local("Work Sans-Medium"),url(/static/work-sans-latin-500-092493151c223670ee3ae92081e1459c.woff2) format("woff2"),url(/static/work-sans-latin-500-5a8e212f1c994e975f940c1a1dc723c8.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:600;src:local("Work Sans SemiBold "),local("Work Sans-SemiBold"),url(/static/work-sans-latin-600-aaa71a84bc56e30763d489199f7cd8e8.woff2) format("woff2"),url(/static/work-sans-latin-600-c1987122c2a0f2f74bf8024cfc038967.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:700;src:local("Work Sans Bold "),local("Work Sans-Bold"),url(/static/work-sans-latin-700-57aab56f67155c247201b13c33e66699.woff2) format("woff2"),url(/static/work-sans-latin-700-f6efe64b9b246e70f4e82ee61e26b5b7.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:800;src:local("Work Sans ExtraBold "),local("Work Sans-ExtraBold"),url(/static/work-sans-latin-800-db41bb1c2eb89f75580787c2357d3594.woff2) format("woff2"),url(/static/work-sans-latin-800-49b6f28ed2079545834290b5bd516242.woff) format("woff")}@font-face{font-display:swap;font-family:Work Sans;font-style:normal;font-weight:900;src:local("Work Sans Black "),local("Work Sans-Black"),url(/static/work-sans-latin-900-507e4ec1cb8dcfdde755e7c94201d2c2.woff2) format("woff2"),url(/static/work-sans-latin-900-98f659120dd5b815d383d32eddb1c1b1.woff) format("woff")}@font-face{font-display:swap;font-family:Quattrocento Sans;font-style:normal;font-weight:400;src:local("Quattrocento Sans Regular "),local("Quattrocento Sans-Regular"),url(/static/quattrocento-sans-latin-400-28e4b23a40eb132de0f14022c8b24a88.woff2) format("woff2"),url(/static/quattrocento-sans-latin-400-92b1a65f989d1bb5d830acd2d698caa4.woff) format("woff")}@font-face{font-display:swap;font-family:Quattrocento Sans;font-style:italic;font-weight:400;src:local("Quattrocento Sans Regular italic"),local("Quattrocento Sans-Regularitalic"),url(/static/quattrocento-sans-latin-400italic-41bf670678ef4455af01787327414522.woff2) format("woff2"),url(/static/quattrocento-sans-latin-400italic-0cc3dc6655e90638c63b34d75c85fcff.woff) format("woff")}@font-face{font-display:swap;font-family:Quattrocento Sans;font-style:normal;font-weight:700;src:local("Quattrocento Sans Bold "),local("Quattrocento Sans-Bold"),url(/static/quattrocento-sans-latin-700-abf4be7dbb1c97e4f843045a1a07324e.woff2) format("woff2"),url(/static/quattrocento-sans-latin-700-4f0579926345f1cf0ba96e0e296efdf1.woff) format("woff")}@font-face{font-display:swap;font-family:Quattrocento Sans;font-style:italic;font-weight:700;src:local("Quattrocento Sans Bold italic"),local("Quattrocento Sans-Bolditalic"),url(/static/quattrocento-sans-latin-700italic-ef42f6d2c22e2f04e9f9228a62ccb803.woff2) format("woff2"),url(/static/quattrocento-sans-latin-700italic-ce44a06f8759a8afdee9369fa6f60085.woff) format("woff")}code,code[class*=language-],pre[class*=language-]{color:#333;cursor:text;direction:ltr;font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;-webkit-hyphens:none;hyphens:none;line-height:1.4;tab-size:4;text-align:left;white-space:pre;word-spacing:normal}pre[class*=language-]{border-radius:3px;font-size:85%;margin:1em 0;overflow:auto;padding:1.2em}li code,p code,table code{border-radius:3px;font-size:85%;margin:0;padding:.2em 0}li code:after,li code:before,p code:after,p code:before,table code:after,table code:before{content:"\00a0";letter-spacing:-.2em}:not(pre)>code[class*=language-],code,pre[class*=language-]{background:#f7f7f7}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#969896}.token.atrule,.token.attr-value,.token.punctuation,.token.string{color:#183691}.token.property,.token.tag{color:#63a35c}.token.boolean,.token.number{color:#0086b3}.language-css .token.string,.token.attr-name,.token.attr-value .punctuation:first-child,.token.entity,.token.important,.token.keyword,.token.operator,.token.regex,.token.selector,.token.url{color:#a71d5d}.token.entity{cursor:help}.namespace{opacity:.7}.layout-module--header--98382{background-color:#fff;border-bottom:1px solid #dce3e5;height:rhythm(2.5);left:0;position:fixed;top:0;width:100%;z-index:999}.layout-module--header--98382 .layout-module--headerWrapper--e246b{align-items:center;display:flex;height:100%;margin:0 auto;max-width:rhythm(70);padding:0 rhythm(.75)}.layout-module--header--98382 .layout-module--headerWrapper--e246b .layout-module--title--37c32{background-image:none;box-shadow:none;color:inherit;text-decoration:none}.layout-module--header--98382 .layout-module--headerWrapper--e246b .layout-module--title--37c32 h2{margin:0}.layout-module--container--22435{margin-left:auto;margin-right:auto;max-width:rhythm(35);padding:rhythm(2.5) rhythm(.75) rhythm(1.5)}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Mingxin&#x27;s Blog RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=cd32fff7bfe950f68f967899894964c6" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cd32fff7bfe950f68f967899894964c6"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cd32fff7bfe950f68f967899894964c6"/><title data-react-helmet="true">VXLAN &amp; Flannel | Mingxin</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div><header><div class="layout-module--header--98382"><div class="layout-module--headerWrapper--e246b"><a class="layout-module--title--37c32" href="/"><h2>Mingxin</h2></a><div></div></div></div></header><div class="layout-module--container--22435"><main><article><header><h1 style="margin-top:1.45rem;margin-bottom:0">VXLAN &amp; Flannel</h1><p style="font-size:0.87055rem;line-height:1.45rem;display:block;margin-bottom:1.45rem">December 23, 2019</p></header><section><h3>VXLAN 是什么</h3>
+<p>Virtual Extensible LAN(VXLAN)是一个在三层网络上模拟二层网络的网络虚拟化技术。可以解决云计算场景下子网不够用的问题。</p>
+<p>有一个和 VXLAN 名字和解决的问题都很相似的技术：VLAN，VXLAN 和 VLAN 相比的优点是什么？</p>
+<p>传统 VLAN 只能支持 4000 个子网，VXLAN 可以支持 1600 万个子网。</p>
+<h3>VXLAN 原理</h3>
+<p>使用三层网络的 udp 包来封装二层的数据包。..</p>
+<h4>包结构</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8eebca9b5c20497d223e8f0e3c856c81/5f6dd/vnet-vxlan-20191107165758344.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgUlEQVR42h2Q20vTARTHf/RkvdZT9AcUQWAPUT0GPRRBRiqVVpbYhSIjK8pY8+40l2BhN1NzlqUGIU7nZebll81d3H6XOZ2b6bwM1xyGhknap58e+PD5cuAcDkdwOF24XG7cskpfhwUlM4GZrJM4bidRUlBIsaGMJ3l5VD66S2V2FtW52TQ9NdBkLKZZc70hly8GHTaHC1X1Igy7PdjtTmxOD6LFTDh5D6Ttw5EYz9aP82yxQtwrL8ev3efU9Ts8fvGO0cVV7NNRRiK/aAnGqMzR4XI4Ub0+hCGbfXOhy6PQY27Fee4gU2mHGLh4hFvZ+aTrSsl8oEd35RL6jDSePcyiwViEqSSfhrJCXufr+aC7w/chB7IkI0SjCwQCQcbG/ITnwoSmZ5BlBf+Il7Bkxy9amZUcTMjDuMR+bL09SEM2xiQ3o8MOxoft+GRJm5smFoshrK2tsUEkMk80GmX59zK/V1dZARY0Ty8u8UvLf/79gzWtv7jAciwCf1dYX19no5aWljSWN7Pg842iKOrmVZIkIWt/8PV2MllfwcT75wQ0B2qMzPZbqFXm0ItBCsQAOZoHPCM0NjTQ2NSMyWTCarUiiOIgra1ttLSYadPc2t2Ht7qcUNJeJhL3Mnk2nuCxXURf53K0O4JQNc622gA7Ps1Q1TnI5dQUUi+kkZBwGoOhFOHb4Hfa2jswm9uxtFswW/tQayuYS9lP6PwBQpcOM3V6NwvVRZz4GiWuboLtHybZ+TlMTbeNGxkZpGdcJTn5DEZjOYLf78ft8SArCooso476Cdl6mXpTyORbg0YJwUo9sW8WXqo/udkT4F7/D+6KIUTVj6mmhrq6eqqqqunq6uY/gdAsTYhtk+wAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title=""
+        src="/static/8eebca9b5c20497d223e8f0e3c856c81/fcda8/vnet-vxlan-20191107165758344.png"
+        srcset="/static/8eebca9b5c20497d223e8f0e3c856c81/12f09/vnet-vxlan-20191107165758344.png 148w,
+/static/8eebca9b5c20497d223e8f0e3c856c81/e4a3f/vnet-vxlan-20191107165758344.png 295w,
+/static/8eebca9b5c20497d223e8f0e3c856c81/fcda8/vnet-vxlan-20191107165758344.png 590w,
+/static/8eebca9b5c20497d223e8f0e3c856c81/efc66/vnet-vxlan-20191107165758344.png 885w,
+/static/8eebca9b5c20497d223e8f0e3c856c81/5f6dd/vnet-vxlan-20191107165758344.png 1139w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>（图片来源：<a href="https://cizixs.com/2017/09/25/vxlan-protocol-introduction/">vxlan 协议原理简介</a>）</p>
+<p>从最内层往外看：最内层的 Original L2 Frame 是虚拟子网的二层数据包，在前面加上 VXLAN 的 header。之后就被当作一个普通的 udp 包的 payload，在真正的物理子网上发送出去。</p>
+<p>这里可以注意一下 VXLAN Header 中的 VNID 字段，共占 24bit，所以 VXLAN 能够支持的不同子网共有<code class="language-text">2^24 = 16777216</code>个。</p>
+<h4>组网原理</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 584px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b9243aa32a333bf609d27ccd5bc2c876/e05eb/5652c940898f4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB70lEQVR42oWSW08TURSF+2d8881X/4sP/gW8hHgJGjXRRlEiUV80itREJIVS0GCBoBFTWkul9EJbeqMzpVM6vQ7ttDOfp1PSiknjTk7OPre111pn2xgRhmlac1TWmPiU5PFKllanv2cyOmyjDjpdw5q/7FU5fyfMxYcxVK3bBzT/A9hjY/5zq2v0105fgXPXf3FhIkgyd4TePqF7WswcqBkqOsPQHBxCvd5EVWRWvTGuOcLcnd8nk5OoV1Wq1RpNrYVhjmDoTTU4UFp9Zr3qeoNKWaFY1dCEb5JSo9zLheJyvUVNVaiXJDp623oTljRCeW0I+Oa7wlaiLmQa2JczjM+lWPMlkNZfE3e/wDf/kq2P04Tm7CJ/jsOzy5X3ezxwpS2QpR2VxYDaB9RbJ9xwHuIMlIVmg2frCuOuIhs7aQ5XpvjtuId31s6PmUcE3t4itDjNaqjETdcRk2sly6hX34pMegoYgrEtGMmRSSaoHJesCrqapynvi3v6qa/DVjEGP6bRyMfo1ArW8rggk4oniR4U+pLf+TP8TJdotXXue2JcdYcIShULxjCEccIKUwwrF7GRKDK2tMuTzbilyh2RWQjLQw+fxjf5KkVpCvljwQUubzvwl7NnGvzv/LMc4ZJ3ltuhZdGwBh8yfmay2xbgHwZb4OU9AMsQAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title=""
+        src="/static/b9243aa32a333bf609d27ccd5bc2c876/e05eb/5652c940898f4.png"
+        srcset="/static/b9243aa32a333bf609d27ccd5bc2c876/12f09/5652c940898f4.png 148w,
+/static/b9243aa32a333bf609d27ccd5bc2c876/e4a3f/5652c940898f4.png 295w,
+/static/b9243aa32a333bf609d27ccd5bc2c876/e05eb/5652c940898f4.png 584w"
+        sizes="(max-width: 584px) 100vw, 584px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>（图片来源：<a href="https://cizixs.com/2017/09/25/vxlan-protocol-introduction/">vxlan 协议原理简介</a>）</p>
+<p>一个 VXLAN 网络中有几个重要的部分：</p>
+<ol>
+<li>VTEP，VXLAN Tunnel Endpoint。这个是每个机器上都会有一个 VXLAN 网络的 endpoint，负责对数据包进行封包和解包。可以是软件实现，也可以是专有的硬件。</li>
+<li>VNI，区分不同 VXLAN 网络的标识符，这个主要是设置在每个 VTEP 上，VNI 相同的 VTEP 在一个子网里。</li>
+</ol>
+<p>几台机器想要组成一个 VXLAN，需要哪些信息？换句话说，假设已经有了一个 VXLAN 网络，在这个网络内的机器 A 想要给机器 B 发个数据包，有哪些地址字段需要填写？</p>
+<p>需要填写的字段有 4 个：</p>
+<ol>
+<li>内层（虚拟子网）的 IP 地址</li>
+<li>内层的 MAC 地址</li>
+<li>外层（物理子网）的 IP 地址</li>
+<li>外层的 MAC 地址</li>
+</ol>
+<p>A 上的应用要给 B 发消息，肯定是知道 B 的 IP 地址（内层 IP 地址）；并且如果知道外层的 IP 地址，通过物理子网的 arp 可以知道外层的 MAC。所以还缺少的地址有：</p>
+<ol>
+<li>内层（虚拟子网）的 MAC 地址</li>
+<li>外层（物理子网）的 IP 地址</li>
+</ol>
+<p>想要得到这两个信息，一般有组播和控制中心两种办法。</p>
+<ol>
+<li>组播是通过在组播地址上组播，VTEP 自动学习着两个信息。这里先不展开介绍</li>
+<li>控制中心是通过一个中心数据库来提供这两个信息，比如在 k8s 中可以在创建 pod 的时候，把 1. pod 的 MAC 地址 2. pod 所在机器的 IP 地址存储到 etcd 里，在后面别的机器（上的 pod）需要和这个 pod 通信的时候，可以通过像 etcd 发起查询得到这两个信息，就可以通信了。</li>
+</ol>
+<h3>在 linux 中实践 VXLAN</h3>
+<h4>目标</h4>
+<p>在 2 台机器上构建一个 VXLAN，使机器&#x3C;==>机器，机器&#x3C;==>容器，容器&#x3C;==>容器之间都可以通信。</p>
+<h4>网络拓扑</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/12be2088c186b3768405cb0713bbedc6/1ac66/expected-network-topography-vxlan.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.02702702702703%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADKUlEQVR42oWUz28bRRTHp04TJcAF9ZRDGwEBVFfqgahS/gH+BJ8r9ZAD/0SOcETiwP9gpEIhbaJGyHY36/01Mzuzu17bu7b3h3+mLlCrEAje5DGzTYqVIjHS077ZmffR973RewghdO3CLldhe3t7TTr79fgz1R29+v4pfnGohxnpzr6U/+/e/fxd8bmO/msBwLVLK5VKS+vr6+9sbW0ty7NKFK2ayZ8f4uTlR14Km4f+7MZlzMbGxmqxWFy5wijI/ZKw1Qu+vFBA/7/WLuKWr2SHkNZVqBaoHhtSzexpFhvYpjO2NT62uZnqD3KlANcx4Fy1lepfqy0lpbFlkcQ0cGxazsjW3THjuK9/i9q/+me9Vx0IpwH4cQPCF20Q0KzzMgQ2oo8kZHd3t1CpVPKatX/z95/DGHqz7rw9bEEwDsAdcuB9G6y0/hcS9Hnj2Mvc1MlYYGfuwMlwZJ16IxdwZPx4FciGZE8KaEwap7zLMqfnZCQimdUxz9Swdor40AYBBNZjYHoGCCBYXTNzRg7Q1HoDFAWXNUP2gBzEf0Tgjb0MNy2wQwo0FgXpWqB3VUBsQM4lkMcC2BDA/mugP/Ek8K2U7YH5WAL9SWNO2hhoDiSAexj0jjoXQHreeO6B3aOg8TqwhAGJcdaaNoEm1sO3gfhJciIUTry54etg+Ia8D6zPBPDoBNl9csYjBlQAnREHGhGhlmfJ7zHwIf0pB8K/QDrAe9GsB6RDMi4gzoCJctnQHPlAByYgd8TPVaqC6RoyDaABBdVSs3Aagn0JXFDoTfnjcBKAitW5LFPz2AcZb7imKJH5N8KpGViRCUdN5Sx/euEr/rN5a+qDM+H5o5ShvFQul1deKzS/cSdc3slkqt7EBbV1dK4HGtQ7z+bI8A9v0FgvPlK+u6P1qx97x2RzT3t420iUO7Xw4ObVFkmhvvYz3/+06j69zWbGJ/vCf6L/UJRxlfBgU/Thm9ZZHBJ5+0lViqLcqtVqN4V9IPz3F88X4hanA8qbOh8O5dJSsVRcub97X/Z2oVqt3kuS5IQQ8kur1YIoir6SIaUvSu+JQbKys7OzLB9s0f4BQqylpplfPB4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title=""
+        src="/static/12be2088c186b3768405cb0713bbedc6/fcda8/expected-network-topography-vxlan.png"
+        srcset="/static/12be2088c186b3768405cb0713bbedc6/12f09/expected-network-topography-vxlan.png 148w,
+/static/12be2088c186b3768405cb0713bbedc6/e4a3f/expected-network-topography-vxlan.png 295w,
+/static/12be2088c186b3768405cb0713bbedc6/fcda8/expected-network-topography-vxlan.png 590w,
+/static/12be2088c186b3768405cb0713bbedc6/1ac66/expected-network-topography-vxlan.png 651w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>（图片来源: <a href="https://github.com/yangyuqian/k8s-the-hard-way/blob/master/network/vxlan-flannel-cn.md">VXLAN 在 Flannel 中的 Overlay 网络的实现</a>）</p>
+<p>需要搭建的 overlay 子网为 192.1.0.0/16。</p>
+<h4>步骤</h4>
+<ol>
+<li>创建 VXLAN interface（VTEP），给 VXLAN 分配 ip</li>
+<li>路由表新增一项，把虚拟子网的流量交给 VTEP 处理</li>
+<li>上面提到要打包缺少的地址：「内层（虚拟子网）的 MAC 地址」，这里通过手动修改 ARP 表实现。ARP 表新增几项，把 overlay 网络上需要访问的容器（机器）ip 地址都指向<strong>该机器的 VTEP 的 MAC 地址</strong>。</li>
+<li>另一个缺少的地址：「外层（物理子网）的 IP 地址」，通过修改转发表来实现。转发表新增一项，把发往 VTEP MAC 地址的流量都指向另一台机器的物理子网 ip</li>
+</ol>
+<h4>一个数据包的奥德赛</h4>
+<p>经过这样的配置之后，一个数据包怎么从一个机器/容器路由到另一个机器/容器呢？这里选择讲解一个最长的路由路径：容器&#x3C;==>容器，其他情况都包含在这个路径里。
+假设 node1 上的容器 A 192.1.78.2 想要发一个数据包给 node2 上的容器 B 192.1.87.2</p>
+<ol>
+<li>
+<p>数据包从 A 发出，通过 docker bridge 来到 docker0 interface，docker0 需要知道该把这个数据包发给谁，于是他查询了路由表，发现命中了这条规则<code class="language-text">192.1.0.0/16</code>，于是发往 vxlan.1 interface。</p>
+</li>
+<li>
+<p>vxlan.1 收到数据包之后开始打包，需要填写 4 个地址：</p>
+<blockquote>
+<ol>
+<li>内层（虚拟子网）的 IP 地址</li>
+<li>内层的 MAC 地址</li>
+<li>外层（物理子网）的 IP 地址</li>
+<li>外层的 MAC 地址</li>
+</ol>
+</blockquote>
+</li>
+</ol>
+<p>1 已知；2 会通过 arp 请求去查找，命中前面手动维护的本地 arp 缓存，得到 node2 VTEP 的 MAC 地址；3 会命中手动维护的 fdb 转发表，得到 node2 的物理子网 IP 地址；4 通过物理子网 arp 得到。</p>
+<ol start="3">
+<li>
+<p>打包完成后，得到一个物理子网的普通 udp 包发往 node2 的 4789 端口。node2 的 vxlan.1 interface 监听该端口，接到 udp 包之后解开封装得到内层的数据包。</p>
+</li>
+<li>
+<p>vxlan.1 需要知道数据包该发往哪里，同样查询本机的路由表，命中<code class="language-text">192.1.87.0/24</code>，发往 docker0 interface。docker0 再将数据包发给容器 B。</p>
+</li>
+</ol>
+<h4>实践</h4>
+<h5>1. 实现机器&#x3C;==>机器通信</h5>
+<p>将以上步骤写到一起，方便执行：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token comment"># step1</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">IP</span><span class="token operator">=</span> <span class="token comment"># 本机ip</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">DEST_IP</span><span class="token operator">=</span> <span class="token comment"># 另一台机器ip</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">VTEP_IP</span><span class="token operator">=</span> <span class="token comment"># 本机VTEP ip</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PREFIX</span><span class="token operator">=</span>vxlan
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">PORT</span><span class="token operator">=</span><span class="token number">4789</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">VNI</span><span class="token operator">=</span><span class="token number">1</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">SUBNET</span><span class="token operator">=</span><span class="token number">192</span>.<span class="token variable">$VNI</span>.0.0/16
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">DEVICE_NAME</span><span class="token operator">=</span><span class="token variable">$PREFIX</span><span class="token builtin class-name">.</span><span class="token variable">$VNI</span>
+
+<span class="token function">ip</span> <span class="token function">link</span> <span class="token function">add</span> <span class="token variable">$DEVICE_NAME</span> <span class="token builtin class-name">type</span> vxlan <span class="token function">id</span> <span class="token variable">$VNI</span> dev eth0 dstport <span class="token variable">$PORT</span> nolearning
+<span class="token function">ip</span> address <span class="token function">add</span> <span class="token variable">$VTEP_IP</span> dev <span class="token variable">$DEVICE_NAME</span>
+<span class="token function">ip</span> <span class="token function">link</span> <span class="token builtin class-name">set</span> <span class="token variable">$DEVICE_NAME</span> up
+<span class="token function">ip</span> route <span class="token function">add</span> <span class="token variable">$SUBNET</span> dev <span class="token variable">$DEVICE_NAME</span> scope global
+
+<span class="token comment"># step2 需要拿到step1的结果后在再进行</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">ANOTHER_VTEP_MAC</span><span class="token operator">=</span> <span class="token comment"># 需要等另一台机器的VXLAN设备创建之后，查看其MAC地址</span>
+bridge fdb <span class="token function">add</span> <span class="token variable">$ANOTHER_VTEP_MAC</span> dev <span class="token variable">$DEVICE_NAME</span> dst <span class="token variable">$DEST_IP</span>
+
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">ANOTHER_NODE_IP</span><span class="token operator">=</span> <span class="token comment"># 需要访问的另一台机器上的（容器或机器）ip</span>
+<span class="token function">ip</span> neighbor <span class="token function">add</span> <span class="token variable">$ANOTHER_NODE_IP</span> lladdr <span class="token variable">$ANOTHER_VTEP_MAC</span> dev <span class="token variable">$DEVICE_NAME</span></code></pre></div>
+<p>Node1:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b75473b2711743edf07bca9b402ad511/00e09/image-20191223172234150.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 89.86486486486487%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaUlEQVR42l1TiXKbMBDlV9okjg1GnEKcEiAsLmMnTtNp+v8f0ocUO05ndjSC4e07drGCj6P/NpKTSttZdGda9lF+iAtFS+XR2o3F057d1/Oeba53y/81kkW584E1E5fn+vBSNkvAZMDaMJOojZveg+meuvvkwYCDjxnM7kllcm771256Z2XvJ80+rB5s+mMbPTrJf3VrZHlX5qhSsRbMqiEVI2QDv/OLLcm2Xo7a+flOX25arODv0XsbyMtAxQDPlTyp+fdhei/bJa/nlI9QYczr4iQWzyS7Ml9Gb+nJpMLiAJ9eUoPfZ63B4NFnjR2URi04Hx36JTtsVTmd+fG1GS9gTsoeYGQOWmMeYHCiEdHnfX7WjuQ5n3IxG81GZ5hKaHsGj00fdEg4kZ+pu8BoDXv8cG77C5enTEzgpIWCBaJ9ElN0pXUjjtbIzLiw8AxC4Gv1ykHeLpVccKJLAH4vg877gqKvtJ2wKpojakXKBSfu6IWQMCd8ivGsJ2b2fU56w1irYad2eEPB+frYncEM/2HWQRoIiNbs6jnB9qdsOMF3APPuhPU0tMY2kJ+YiCNCch018nfCdXiWG3AhV+amvyAzkJvMATAiNzjhE6eXP+k7dm5DUj2qjKdqTuUETmBAi/VkfIRn/Q8ljk1dO/btmNixZ0cbm/7UA1uZ/cvoTp07rbudFCpv1pVE5TU8D2lYCMqLmJdxxSlvE8FYs49FhCxiYXnH3paNIxs/k3iFwpLBcJR38IltCwvlZ12QKwdpBeVWj8CskOX/mcP3iSw9foxcQPxc6lGDGV3WsbcY5JxBTjXgPdrdfsx/qjjuewYtBlQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20191223172234150"
+        title=""
+        src="/static/b75473b2711743edf07bca9b402ad511/fcda8/image-20191223172234150.png"
+        srcset="/static/b75473b2711743edf07bca9b402ad511/12f09/image-20191223172234150.png 148w,
+/static/b75473b2711743edf07bca9b402ad511/e4a3f/image-20191223172234150.png 295w,
+/static/b75473b2711743edf07bca9b402ad511/fcda8/image-20191223172234150.png 590w,
+/static/b75473b2711743edf07bca9b402ad511/efc66/image-20191223172234150.png 885w,
+/static/b75473b2711743edf07bca9b402ad511/c83ae/image-20191223172234150.png 1180w,
+/static/b75473b2711743edf07bca9b402ad511/00e09/image-20191223172234150.png 1854w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Node2 :</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/594f065dc1585d6f878c52683ea095b8/2093e/image-20191223172531204.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 87.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR42l1TCa6jMBTjKP3tny6UfQkQQtgDgbZ0+3P/o4wJ1bQzkhVFKM6zHaPZv0fAvPZRfcrbW5QPSXmKuIz54NHWS5pvI/rE5mOvWXdpPaQxiqCUWT3l4kbLk+5mB5eZQW4E+S8z/mT6RmAZ4eZFfg72YzCmjtQjJoNMuPRTYUfVWg9Xe39zJJ/YAstdR6LZIP8M5tR7eRekwmcirc4ArnCTxial7mVHn0OCGRbQovv8pQVk8y7Ne2+cBci0OEFzJZ9F/4D5SEmYCV62tZIFeyd9k53n4P6MzlWSakRIGM7qC8l6kONi5rNm8mm70PY2hfLvv7KPHofIorvDbd7dUzC5TIoxzoeAdbPUsMBkyIZ44J08yDub4npanrNmwkwQcM4KiyWer0MAYIPwFvxDtkjJ5heaJ/P2ChVY4ZxWZ1jAWEsNx4rwcC/W3SIeZDiJ85FWFwgGYV7LE3qCp0JUsPpfSd7PPqcdFoiEi1vZP+Aca9ZcoQVDDJ/DrancWmosDmPsWicvMj4hHhCU5wmysYGEuBgJ7524RtUA8JfN3qEAFG2O4TwZ55bhinxBSXFdkHYotqEaCgkOXKiSLCpwy0YPtZ2ZpOWZN1dkBsMqrble8LbaB19oqB5+Kax0hD9vltiRmXbghSt6v5VROSIqeOaq4SHrXNq6Lo3sOHFiakfMibmb2B7b2hRZwLxmX6Qu64OorLQmrPdZh2cHyLKmLUXb0pakIogry2NWOLcVbwH9Gv5k69obg3AzgRribaN8ZuJnxo9B8iHkMmC9lwoIwd5U/VmrCv0BnxfhQipPukgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20191223172531204"
+        title=""
+        src="/static/594f065dc1585d6f878c52683ea095b8/fcda8/image-20191223172531204.png"
+        srcset="/static/594f065dc1585d6f878c52683ea095b8/12f09/image-20191223172531204.png 148w,
+/static/594f065dc1585d6f878c52683ea095b8/e4a3f/image-20191223172531204.png 295w,
+/static/594f065dc1585d6f878c52683ea095b8/fcda8/image-20191223172531204.png 590w,
+/static/594f065dc1585d6f878c52683ea095b8/efc66/image-20191223172531204.png 885w,
+/static/594f065dc1585d6f878c52683ea095b8/c83ae/image-20191223172531204.png 1180w,
+/static/594f065dc1585d6f878c52683ea095b8/2093e/image-20191223172531204.png 1858w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>查看一下这样执行之后机器上的路由表、arp 表、和 fdb 转发表的内容，这里以 node1 为例：</p>
+<p>路由表：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">root@VM-0-7-ubuntu:~<span class="token comment"># ip route</span>
+default via <span class="token number">172.17</span>.0.1 dev eth0 proto static
+<span class="token number">172.17</span>.0.0/20 dev eth0 proto kernel scope <span class="token function">link</span> src <span class="token number">172.17</span>.0.7
+<span class="token number">172.18</span>.0.0/16 dev docker0 proto kernel scope <span class="token function">link</span> src <span class="token number">172.18</span>.0.1 linkdown
+<span class="token number">192.1</span>.0.0/16 dev vxlan.1</code></pre></div>
+<p><code class="language-text">192.1.0.0/16 dev vxlan.1</code>这条规则指定了<code class="language-text">192.1.0.0/16</code>这个子网的流量都会通过<code class="language-text">vxlan.1</code>这个设备来处理。</p>
+<p>arp 表：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">root@VM-0-7-ubuntu:~<span class="token comment"># ip neighbor</span>
+<span class="token number">192.1</span>.87.0 dev vxlan.1 lladdr d2:04:98:13:a7:aa PERMANENT
+<span class="token number">172.17</span>.0.1 dev eth0 lladdr fe:ee:00:2e:16:9a REACHABLE
+<span class="token number">172.17</span>.0.4 dev eth0 lladdr fe:ee:00:2e:16:9a STALE</code></pre></div>
+<p>在 arp 表中添加了我们需要访问的 ip <code class="language-text">192.1.87.0</code>的 MAC 地址（因为我们需要 ping 的 node2 的机器 ip）。需要注意的是，如果等下需要访问 node2 容器的 ip 地址（比如<code class="language-text">192.1.87.2</code>)，这里还需要添加一条记录。</p>
+<p>fdb 转发表：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">root@VM-0-7-ubuntu:~<span class="token comment"># bridge fdb</span>
+<span class="token number">33</span>:33:00:00:00:01 dev eth0 self permanent
+01:00:5e:00:00:01 dev eth0 self permanent
+<span class="token number">33</span>:33:ff:7b:75:85 dev eth0 self permanent
+01:80:c2:00:00:00 dev eth0 self permanent
+01:80:c2:00:00:03 dev eth0 self permanent
+01:80:c2:00:00:0e dev eth0 self permanent
+<span class="token number">33</span>:33:00:00:00:01 dev docker0 self permanent
+01:00:5e:00:00:01 dev docker0 self permanent
+02:42:c0:52:69:49 dev docker0 vlan <span class="token number">1</span> master docker0 permanent
+02:42:c0:52:69:49 dev docker0 master docker0 permanent
+d2:04:98:13:a7:aa dev vxlan.1 dst <span class="token number">172.17</span>.0.4 self permanent</code></pre></div>
+<p>指定了发往<code class="language-text">d2:04:98:13:a7:aa</code>这个 MAC 地址（node2 VTEP 的 MAC 地址）的流量都发向<code class="language-text">172.17.0.4</code>这个 ip。</p>
+<p>这样就可以 ping 通两台机器了：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d97c5144bd758c68eee7f44af30edb81/b6e50/image-20191223172718418.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAj0lEQVR42o2PSRKDMAwE+U1YsrDEOzYQMBgq///ORPYH4kPX6KLWqBA+gC0ecj5g7Qk3XbDuhJAb+mHCq3WoG4Gy4lkUWu3Q+oCilNrDjCERhTHjAak8biXLExoTqNGV2sXF2I6LNTG8F7SdRdc7muc8oaSX1UZS/4UjMeOfJIsNGV/p5RHNXeHx1Khq8ZcfKWiBeav+TdQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20191223172718418"
+        title=""
+        src="/static/d97c5144bd758c68eee7f44af30edb81/fcda8/image-20191223172718418.png"
+        srcset="/static/d97c5144bd758c68eee7f44af30edb81/12f09/image-20191223172718418.png 148w,
+/static/d97c5144bd758c68eee7f44af30edb81/e4a3f/image-20191223172718418.png 295w,
+/static/d97c5144bd758c68eee7f44af30edb81/fcda8/image-20191223172718418.png 590w,
+/static/d97c5144bd758c68eee7f44af30edb81/efc66/image-20191223172718418.png 885w,
+/static/d97c5144bd758c68eee7f44af30edb81/c83ae/image-20191223172718418.png 1180w,
+/static/d97c5144bd758c68eee7f44af30edb81/b6e50/image-20191223172718418.png 1862w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h5>2. 实现容器&#x3C;==>容器通信</h5>
+<p>有了前面机器&#x3C;==>机器的通信基础之后，容器&#x3C;==>容器就比较简单了。</p>
+<p>首先需要改一下 docker 的子网，修改 docker 的启动参数并重启 docker：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">cat</span> <span class="token operator">></span> /etc/docker/daemon.json <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+{"bip":"192.1.78.1/24"}
+EOF</span>
+
+systemctl restart <span class="token function">docker</span></code></pre></div>
+<p>然后启动 docker 容器：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">docker</span> run <span class="token parameter variable">-it</span> <span class="token parameter variable">--rm</span> busybox</code></pre></div>
+<p>查看一下容器的 ip 地址：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">/ <span class="token comment"># ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">></span> mtu <span class="token number">65536</span> qdisc noqueue qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+<span class="token number">6</span>: eth0@if7: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">></span> mtu <span class="token number">1500</span> qdisc noqueue
+    link/ether 02:42:c0:01:4e:02 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">192.1</span>.78.2/24 brd <span class="token number">192.1</span>.78.255 scope global eth0
+       valid_lft forever preferred_lft forever</code></pre></div>
+<p>在 node2 上面重复以上步骤（对应的子网地址需要改一下）。</p>
+<p>可以看到 node1 上 container 的 ip 是<code class="language-text">192.1.78.2</code>，node2 上的 container 的 ip 是<code class="language-text">192.1.87.2</code>，所以需要在 2 台机器上分别添加这两个 ip 的 arp 记录：</p>
+<p>Node1:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">ANOTHER_NODE_IP</span><span class="token operator">=</span><span class="token number">192.1</span>.87.2 <span class="token comment"># 需要访问的另一台机器上的（容器或机器）ip</span>
+<span class="token function">ip</span> neighbor <span class="token function">add</span> <span class="token variable">$ANOTHER_NODE_IP</span> lladdr <span class="token variable">$ANOTHER_VTEP_MAC</span> dev <span class="token variable">$DEVICE_NAME</span></code></pre></div>
+<p>Node2:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">export</span> <span class="token assign-left variable">ANOTHER_NODE_IP</span><span class="token operator">=</span><span class="token number">192.1</span>.78.2 <span class="token comment"># 需要访问的另一台机器上的（容器或机器）ip</span>
+<span class="token function">ip</span> neighbor <span class="token function">add</span> <span class="token variable">$ANOTHER_NODE_IP</span> lladdr <span class="token variable">$ANOTHER_VTEP_MAC</span> dev <span class="token variable">$DEVICE_NAME</span></code></pre></div>
+<p>这样就可以 ping 通容器…了吗？并没有，这时候 ping 会发现是 ping 不通的。</p>
+<p>经过很长时间的摸索，我发现是 docker 设置的 iptables 的规则阻止了 ping 包:</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">root@VM-0-4-ubuntu:~<span class="token comment"># iptables -L -v</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT <span class="token number">1322</span> packets, 897K bytes<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+
+Chain FORWARD <span class="token punctuation">(</span>policy DROP <span class="token number">10</span> packets, <span class="token number">840</span> bytes<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+   <span class="token number">10</span>   <span class="token number">840</span> DOCKER-<span class="token environment constant">USER</span>  all  --  any    any     anywhere             anywhere
+   <span class="token number">10</span>   <span class="token number">840</span> DOCKER-ISOLATION-STAGE-1  all  --  any    any     anywhere             anywhere
+    <span class="token number">0</span>     <span class="token number">0</span> ACCEPT     all  --  any    docker0  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+   <span class="token number">10</span>   <span class="token number">840</span> DOCKER     all  --  any    docker0  anywhere             anywhere
+    <span class="token number">0</span>     <span class="token number">0</span> ACCEPT     all  --  docker0 <span class="token operator">!</span>docker0  anywhere             anywhere
+    <span class="token number">0</span>     <span class="token number">0</span> ACCEPT     all  --  docker0 docker0  anywhere             anywhere
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT <span class="token number">1294</span> packets, 147K bytes<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+
+Chain DOCKER <span class="token punctuation">(</span><span class="token number">1</span> references<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+
+Chain DOCKER-ISOLATION-STAGE-1 <span class="token punctuation">(</span><span class="token number">1</span> references<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+    <span class="token number">0</span>     <span class="token number">0</span> DOCKER-ISOLATION-STAGE-2  all  --  docker0 <span class="token operator">!</span>docker0  anywhere             anywhere
+   <span class="token number">10</span>   <span class="token number">840</span> RETURN     all  --  any    any     anywhere             anywhere
+
+Chain DOCKER-ISOLATION-STAGE-2 <span class="token punctuation">(</span><span class="token number">1</span> references<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+    <span class="token number">0</span>     <span class="token number">0</span> DROP       all  --  any    docker0  anywhere             anywhere
+    <span class="token number">0</span>     <span class="token number">0</span> RETURN     all  --  any    any     anywhere             anywhere
+
+Chain DOCKER-<span class="token environment constant">USER</span> <span class="token punctuation">(</span><span class="token number">1</span> references<span class="token punctuation">)</span>
+ pkts bytes target     prot opt <span class="token keyword">in</span>     out     <span class="token builtin class-name">source</span>               destination
+   <span class="token number">10</span>   <span class="token number">840</span> RETURN     all  --  any    any     anywhere             anywhere</code></pre></div>
+<p>iptables 的<code class="language-text">FORWARD</code>chain 阻止了包从<code class="language-text">vxlan.1</code> 到<code class="language-text">docker0</code>interface 的 forward，所以导致 ping 不通。这里不细究<code class="language-text">FORWARD</code>chain 下的 iptables 规则，先简单直接地把<code class="language-text">FORWARD</code>chain 的默认 policy 设置为<code class="language-text">ACCEPT</code>：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">iptables -P FORWARD ACCEPT</code></pre></div>
+<p>这样 2 个容器之间就可以 ping 通了：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/cc6fe/image-20191223192249290.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.62162162162162%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAiklEQVR42o3PWQ7CMAwE0N6GAqKsaZzF0CVpmqoI7n+ZIY04QD6sma+ncfUKb3BYoYcIMhOIHEQ7QP7z1BjU+7b4Kjd+YHSAtRFKT5DKgTnC8oyuX8HPBYcjYVeLMpASIOSYoW0VKY+H6HG5Mm73LucGli/037QmwtgAnV5W2qc+Z1iSz2BztsXgD+jjgO2gBHvDAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20191223192249290"
+        title=""
+        src="/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/fcda8/image-20191223192249290.png"
+        srcset="/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/12f09/image-20191223192249290.png 148w,
+/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/e4a3f/image-20191223192249290.png 295w,
+/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/fcda8/image-20191223192249290.png 590w,
+/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/efc66/image-20191223192249290.png 885w,
+/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/c83ae/image-20191223192249290.png 1180w,
+/static/43cf0a876f7d5381e7b9f1d2dc7b1fb5/cc6fe/image-20191223192249290.png 1860w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h3>Flannel and VXLAN</h3>
+<p>Flannel 和 VXLAN 有什么关系？</p>
+<p>Flannel 采用搭建 overlay 网络的方法来满足<a href="https://kubernetes.io/docs/concepts/cluster-administration/networking/#the-kubernetes-network-model">k8s 的网络模型</a>，它提供了几个不通的 backend 来搭建 overlay 网络，其中 VXLAN 是最推荐的一个 backend。VXLAN 在 linux 内核中有良好支持，性能好。</p>
+<p>Flannel 利用 VXLAN 来构建 overlay 网络，本身只维护几个表，其余工作都是 VXLAN 完成。基本原理和上面的手工操作是一样的，只是 flannel 把这个过程自动化了。</p>
+<p>Flannel 一共迭代了 3 个版本：</p>
+<h4>第一版</h4>
+<p>每个机器上的 flannel daemon 会创建 VXLAN interface，并把自己注册为 L2MISS 和 L3MISS 事件的 handler。</p>
+<p>L2MISS 是在 2 层网络的 miss，也就是从 IP 查找 MAC 这一步的 miss（对应上面的地址 2）。Flannel daemon 收到 miss 后会查找存储的数据来给出对应的 MAC 地址，并将其加入 arp 缓存。</p>
+<p>L3MISS 是 host 不知道某个 MAC 地址应该发往哪里时产生的 miss（对应上面的地址 3）。收到 miss 后给出 ip 地址，并加入 fdb。</p>
+<p>这个版本每个机器上需要有：</p>
+<ul>
+<li>1 条路由表记录（指向 VXLAN interface）</li>
+<li>每个最近通信过的 container1 条 arp 表记录</li>
+<li>每个主机 1 条 fdb 表记录</li>
+</ul>
+<h4>第二版</h4>
+<p>去掉 L3MISS handler。每次新机器加入集群时，直接添加在所有主机上添加好所需的 fdb 记录。</p>
+<h4>第三版</h4>
+<p>去掉 L2MISS handler。需要添加 n-1 条路由表记录，这些路由表记录和前面不同的是，除了将路由指向 VXLAN interface，还指定了通过 VXLAN 之后下一跳的地址（对应主机的 ip 地址）。这样就只需要每个主机 1 条 arp 记录，以及每个主机 1 条 fdb 记录。</p>
+<p>这样 flannel daemon 就不需要监听任何内核的事件，只需要在机器加入、退出集群的时候维护好这些记录。即使 flannel daemon 挂了整个 overlay 网络还是能（在很长一段时间内）正常运行。</p>
+<h3>Reference</h3>
+<ol>
+<li><a href="https://github.com/yangyuqian/k8s-the-hard-way/blob/master/network/vxlan-flannel-cn.md">vxlan 在 Flannel 中的 Overlay 网络的实现</a></li>
+<li><a href="https://cizixs.com/2017/09/25/vxlan-protocol-introduction/">vxlan 协议原理简介</a></li>
+<li><a href="https://www.sdnlab.com/21143.html">容器 Flannel vxlan 基本原理和验证</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7348">rfc7348</a></li>
+<li><a href="https://github.com/coreos/Flannel/blob/master/backend/vxlan/vxlan.go#L18">Flannel design notes and history</a></li>
+</ol></section><hr style="margin-bottom:1.45rem"/><footer></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/Kubernenes 101/">← <!-- -->Kubernetes 101</a></li><li><a rel="next" href="/An HTTP Debug Experience/">一次http debug经历<!-- --> →</a></li></ul></nav><div id="disqus_thread"></div></main><footer>© 2019-<!-- -->2026<!-- -->, Built By Gatsby</footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-154991093-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/VXLAN&Flannel/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+          <script
+            id="gatsby-chunk-mapping"
+          >
+            window.___chunkMapping="{\"app\":[\"/app-1f06b281566629340960.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-7911718ca93a0252fb5d.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-eb554c49dd810a871d3c.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-3891715132f426e32443.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-19cb2fb168d8e08cc707.js\"]}";
+          </script>
+        <script>window.___webpackCompilationHash="cda0d71c8b581899c9b9";</script><script src="/webpack-runtime-20f6f33c285521a9adae.js" async></script><script src="/framework-c35dfa600322d6fd47d1.js" async></script><script src="/app-1f06b281566629340960.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
